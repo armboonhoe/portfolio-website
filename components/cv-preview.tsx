@@ -101,11 +101,11 @@ export function CvPreviewButton() {
               <Mail className="h-3.5 w-3.5" />
               {cv.contact.email}
             </a>
-            <a href={`https://${cv.contact.linkedin}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-foreground">
+            <a href={`https://${cv.contact.linkedin}`} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-foreground">
               <Linkedin className="h-3.5 w-3.5" />
               LinkedIn
             </a>
-            <a href={`https://${cv.contact.github}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-foreground">
+            <a href={`https://${cv.contact.github}`} target="_blank" rel="nofollow noopener noreferrer" className="inline-flex items-center gap-1.5 hover:text-foreground">
               <Github className="h-3.5 w-3.5" />
               GitHub
             </a>

@@ -2,6 +2,15 @@ import { ArrowUpRight } from "lucide-react"
 
 const experiences = [
   {
+    period: "Mar 2026 — Present",
+    role: "Founder & Developer",
+    company: "CherCode",
+    url: "https://chercode.com/",
+    description:
+      "Founded a digital agency delivering Next.js websites, AI chatbots, CRM systems, and automation workflows for SMEs. Built AI chatbots with RAG architecture integrated with LINE OA, reducing client response time by 70%. Created a clinic CRM with Supabase/PostgreSQL featuring patient management, appointment booking, coupon system, and LINE Notification.",
+    tags: ["Next.js", "Supabase", "OpenAI", "Claude API", "n8n", "LINE API"],
+  },
+  {
     period: "Jul 2025 — Present",
     role: "Full-Stack Developer",
     company: "ANGA Bangkok (SEO Agency)",
@@ -9,15 +18,6 @@ const experiences = [
     description:
       "Built an AI-powered SEO Content Generator with E-E-A-T optimization using ChatGPT and Gemini APIs. Developed a Budget Alert System integrated with Google Ads and Facebook Ads APIs with GitHub Actions cron jobs. Deployed Next.js apps on AWS Amplify with 99.9% uptime and Lighthouse 95+ scores. Managed bulk Search Console data using BigQuery for large-scale SEO analysis.",
     tags: ["Next.js", "AWS Amplify", "OpenAI", "Gemini", "BigQuery", "GitHub Actions"],
-  },
-  {
-    period: "2025 — Present",
-    role: "Founder & Developer",
-    company: "CherCode",
-    url: "https://chercode.com/",
-    description:
-      "Founded a digital agency delivering Next.js websites, AI chatbots, CRM systems, and automation workflows for SMEs. Built AI chatbots with RAG architecture integrated with LINE OA, reducing client response time by 70%. Created a clinic CRM with Supabase/PostgreSQL featuring patient management, appointment booking, coupon system, and LINE Notification.",
-    tags: ["Next.js", "Supabase", "OpenAI", "Claude API", "n8n", "LINE API"],
   },
   {
     period: "Feb 2024 — Jun 2025",
@@ -55,7 +55,7 @@ export function ExperienceSection() {
             <a
               key={index}
               href={exp.url}
-              {...(exp.url !== "#" ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              {...(exp.url !== "#" ? { target: "_blank", rel: exp.url.includes("chercode.com") ? "noopener noreferrer" : "nofollow noopener noreferrer" } : {})}
               className="group grid gap-4 border-t border-border py-8 transition-colors first:border-t-0 hover:bg-muted/30 md:grid-cols-[200px_1fr] md:gap-8 md:rounded-xl md:px-6"
             >
               <p className="font-mono text-xs tracking-wide text-muted-foreground pt-1">

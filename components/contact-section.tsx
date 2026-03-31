@@ -173,13 +173,13 @@ export function ContactSection() {
           </div>
 
           {/* Right — social links */}
-          <div className="flex flex-col justify-center gap-6">
+          <div className="flex flex-col justify-start gap-6 md:pt-[4.5rem]">
             {socialLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
                 target={link.label !== "Email" ? "_blank" : undefined}
-                rel={link.label !== "Email" ? "noopener noreferrer" : undefined}
+                rel={link.label !== "Email" ? "nofollow noopener noreferrer" : undefined}
                 className="group flex items-center justify-between border-b border-border pb-6 transition-colors last:border-b-0 last:pb-0"
               >
                 <div className="flex min-w-0 items-center gap-4">
