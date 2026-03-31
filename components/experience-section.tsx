@@ -62,11 +62,11 @@ export function ExperienceSection() {
                 {exp.period}
               </p>
               <div>
-                <h3 className="flex items-center gap-2 font-semibold text-foreground">
-                  {exp.role}
+                <h3 className="flex flex-wrap items-center gap-x-2 gap-y-1 font-semibold text-foreground">
+                  <span>{exp.role}</span>
                   <span className="text-muted-foreground">{"·"}</span>
                   <span className="text-muted-foreground">{exp.company}</span>
-                  <ArrowUpRight className="h-4 w-4 text-muted-foreground opacity-0 transition-all group-hover:opacity-100 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                  <ArrowUpRight className="h-4 w-4 shrink-0 text-muted-foreground opacity-0 transition-all group-hover:opacity-100 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {exp.description}

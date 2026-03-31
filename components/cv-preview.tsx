@@ -75,7 +75,7 @@ const cv = {
     school: "King Mongkut's University of Technology North Bangkok (KMUTNB)",
     degree: "Bachelor's Degree",
   },
-  languages: "Thai (Native), English (Professional)",
+  languages: "Thai (Native), English",
 }
 
 export function CvPreviewButton() {

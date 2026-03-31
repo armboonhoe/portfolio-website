@@ -182,13 +182,13 @@ export function ContactSection() {
                 rel={link.label !== "Email" ? "noopener noreferrer" : undefined}
                 className="group flex items-center justify-between border-b border-border pb-6 transition-colors last:border-b-0 last:pb-0"
               >
-                <div className="flex items-center gap-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-muted">
+                <div className="flex min-w-0 items-center gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-muted">
                     <link.icon className="h-4 w-4 text-foreground" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm font-medium text-foreground">{link.label}</p>
-                    <p className="text-sm text-muted-foreground">{link.value}</p>
+                    <p className="truncate text-sm text-muted-foreground">{link.value}</p>
                   </div>
                 </div>
                 <ArrowUpRight className="h-4 w-4 text-muted-foreground opacity-0 transition-all group-hover:opacity-100 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

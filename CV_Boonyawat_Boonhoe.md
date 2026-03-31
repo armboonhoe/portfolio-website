@@ -80,6 +80,6 @@ Bachelor's Degree
 
 ## ADDITIONAL INFORMATION
 
-**Languages:** Thai (Native), English (Professional)
+**Languages:** Thai (Native), English
 
 **Portfolio:** github.com/armboonhoe
