@@ -1,6 +1,6 @@
 "use client"
 
-import { FileText, Download, Mail, Github, Linkedin } from "lucide-react"
+import { FileText, Download, Mail, Phone, Github, Linkedin } from "lucide-react"
 import {
   Dialog,
   DialogContent,
@@ -13,6 +13,7 @@ const cv = {
   name: "Boonyawat Boonhoe",
   title: "Full-Stack Developer / SEO MarTech Engineer",
   contact: {
+    phone: "098-924-8984",
     email: "armboonhoe@gmail.com",
     linkedin: "linkedin.com/in/boonyawat-boonhoe",
     github: "github.com/armboonhoe",
@@ -97,6 +98,10 @@ export function CvPreviewButton() {
           <h2 className="text-2xl font-bold tracking-tight lg:text-3xl">{cv.name}</h2>
           <p className="mt-1 font-mono text-sm text-muted-foreground lg:mt-2 lg:text-base">{cv.title}</p>
           <div className="mt-3 flex flex-wrap items-center gap-4 text-sm text-muted-foreground lg:mt-4 lg:gap-6">
+            <a href="tel:+66989248984" className="inline-flex items-center gap-1.5 hover:text-foreground">
+              <Phone className="h-3.5 w-3.5" />
+              {cv.contact.phone}
+            </a>
             <a href={`mailto:${cv.contact.email}`} className="inline-flex items-center gap-1.5 hover:text-foreground">
               <Mail className="h-3.5 w-3.5" />
               {cv.contact.email}

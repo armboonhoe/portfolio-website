@@ -1,9 +1,15 @@
 "use client"
 
 import { useState } from "react"
-import { Github, Linkedin, Mail, ArrowUpRight, Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react"
+import { Github, Linkedin, Mail, Phone, ArrowUpRight, Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react"
 
 const socialLinks = [
+  {
+    label: "Phone",
+    href: "tel:+66989248984",
+    value: "098-924-8984",
+    icon: Phone,
+  },
   {
     label: "Email",
     href: "mailto:armboonhoe@gmail.com",

@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react"
 import Image from "next/image"
 import { CvPreviewButton } from "@/components/cv-preview"
 
@@ -37,9 +37,20 @@ export function HeroSection() {
               Welcome to my portfolio
             </p>
 
-            <h2 className="mb-4 text-2xl font-bold tracking-tight text-foreground sm:text-4xl">
-              Boonyawat Boonhoe
-            </h2>
+            <div className="mb-4 flex items-center gap-3 sm:gap-0">
+              <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full sm:hidden">
+                <Image
+                  src="/profile_png.png"
+                  alt="Boonyawat Boonhoe"
+                  fill
+                  priority
+                  className="object-cover object-top"
+                />
+              </div>
+              <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-4xl">
+                Boonyawat Boonhoe
+              </h2>
+            </div>
 
             <h1 className="text-balance text-3xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
               Building digital
@@ -84,6 +95,13 @@ export function HeroSection() {
             </div>
 
             <div className="mt-8 flex items-center gap-6">
+              <a
+                href="tel:+66989248984"
+                className="text-muted-foreground transition-colors hover:text-foreground"
+                aria-label="Phone"
+              >
+                <Phone className="h-5 w-5" />
+              </a>
               <a
                 href="https://github.com/armboonhoe"
                 target="_blank"
