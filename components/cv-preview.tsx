@@ -42,7 +42,7 @@ const cv = {
     {
       role: "Founder & Developer",
       company: "CherCode",
-      period: "2025 – Present",
+      period: "Mar 2026 – Present",
       highlights: [
         "Founded a digital agency delivering Next.js websites, AI chatbots, CRM systems, and automation workflows",
         "Built AI chatbots with RAG architecture integrated with LINE OA, reducing response time by 70%",
