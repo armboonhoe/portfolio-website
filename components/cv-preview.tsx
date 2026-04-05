@@ -29,7 +29,7 @@ const cv = {
   ],
   experience: [
     {
-      role: "Full-Stack Developer",
+      role: "SEO & MarTech Engineer",
       company: "ANGA Bangkok (SEO Agency)",
       period: "Jul 2025 – Present",
       highlights: [

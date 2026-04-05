@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react"
 const experiences = [
   {
     period: "Jul 2025 — Present",
-    role: "Full-Stack Developer",
+    role: "SEO & MarTech Engineer",
     company: "ANGA Bangkok (SEO Agency)",
     url: "https://anga.co.th/",
     description:
